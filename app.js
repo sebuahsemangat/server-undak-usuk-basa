@@ -5,7 +5,7 @@ const PORT = 3000;
 
 // Load data from JSON file
 const loadData = () => {
-  const data = require('./data/undakUsukBasa.json', 'utf8');
+  const data = fs.readFileSync('./data/undakUsukBasa.json', 'utf8');
   return JSON.parse(data);
 };
 
