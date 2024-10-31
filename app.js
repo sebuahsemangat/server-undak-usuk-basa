@@ -10,7 +10,7 @@ const loadData = () => {
 };
 
 // Endpoint untuk mencari data berdasarkan slug
-app.get('/:slug', (req, res) => {
+app.get('/api/:slug', (req, res) => {
   const { slug } = req.params;
   const data = loadData();
 
